@@ -1,0 +1,42 @@
+name: fintableapp
+description: "A new Flutter project."
+
+publish_to: "none"
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.5.4
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.8
+  get: ^4.6.6
+  flutter_zoom_drawer: ^3.2.0
+  lorem_ipsum: ^0.0.3
+  mrx_charts: ^0.1.3
+  intl: ^0.20.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^4.0.0
+  icons_launcher: ^3.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/logo/00B50396-F9A1-4A4D-B422-E2E16061D005.png
+    - assets/logo/00B50396-F9A1-4A4D-B422-E2E16061D005-modified.png
+
+icons_launcher:
+  image_path: "assets/logo/00B50396-F9A1-4A4D-B422-E2E16061D005.png"
+  platforms:
+    android:
+      enable: true
+      image_path: "assets/logo/00B50396-F9A1-4A4D-B422-E2E16061D005-modified.png"
+    ios:
+      enable: true
