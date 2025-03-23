@@ -1,4 +1,5 @@
 import 'package:fintableapp/services/responsive_size.dart';
+import 'package:fintableapp/v/investment_page.dart';
 import 'package:fintableapp/v/widgets/company_detail/company_detail_header.dart';
 import 'package:fintableapp/v/widgets/company_detail/company_graph.dart';
 import 'package:fintableapp/v/widgets/company_detail/detailed_data.dart';
@@ -56,6 +57,15 @@ class _CompanyDetailState extends State<CompanyDetail> {
             ],
           ),
         ),
+      ),
+      floatingActionButtonLocation: FloatingActionButtonLocation.endFloat,
+      floatingActionButton: FloatingActionButton.extended(
+        onPressed: () {
+          Navigator.of(context).push(MaterialPageRoute(builder: (context) => const InvestmentPage()));
+        },
+        backgroundColor: Colors.grey[900],
+        icon: const Icon(CupertinoIcons.plus_circle, color: Colors.white),
+        label: const Text('Yatırım Yap', style: TextStyle(color: Colors.white)),
       ),
     );
   }
